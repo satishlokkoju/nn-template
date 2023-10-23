@@ -1,9 +1,9 @@
 # NN Template
 
 <p align="center">
-    <a href="https://github.com/grok-ai/nn-template/actions/workflows/test_suite.yml"><img alt="CI" src=https://github.com/grok-ai/nn-template/actions/workflows/test_suite.yml/badge.svg?branch=main></a>
-    <a href="https://github.com/grok-ai/nn-template/actions/workflows/test_suite.yml"><img alt="CI" src=https://github.com/grok-ai/nn-template/actions/workflows/test_suite.yml/badge.svg?branch=develop></a>
-    <a href="https://github.com/grok-ai/nn-template/actions/workflows/publish_docs.yml/badge.svg"><img alt="Docs" src=https://github.com/grok-ai/nn-template/actions/workflows/publish_docs.yml/badge.svg></a>
+    <a href="https://github.com/satishlokkoju/nn-template/actions/workflows/test_suite.yml"><img alt="CI" src=https://github.com/satishlokkoju/nn-template/actions/workflows/test_suite.yml/badge.svg?branch=main></a>
+    <a href="https://github.com/satishlokkoju/nn-template/actions/workflows/test_suite.yml"><img alt="CI" src=https://github.com/satishlokkoju/nn-template/actions/workflows/test_suite.yml/badge.svg?branch=develop></a>
+    <a href="https://github.com/satishlokkoju/nn-template/actions/workflows/publish_docs.yml/badge.svg"><img alt="Docs" src=https://github.com/satishlokkoju/nn-template/actions/workflows/publish_docs.yml/badge.svg></a>
     <a href="https://pypi.org/project/nn-template-core/"><img alt="Release" src="https://img.shields.io/pypi/v/nn-template-core?label=nn-core"></a>
     <a href="https://black.readthedocs.io/en/stable/"><img alt="Code style: black" src="https://img.shields.io/badge/code%20style-black-000000.svg"></a>
 </p>
