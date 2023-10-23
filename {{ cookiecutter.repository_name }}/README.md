@@ -30,8 +30,8 @@ Setup the development environment:
 ```bash
 git clone git@github.com:{{ cookiecutter.github_user }}/{{ cookiecutter.repository_name }}.git
 cd {{ cookiecutter.repository_name }}
-conda env create -f env.yaml
-conda activate {{ cookiecutter.conda_env_name }}
+mamba env create -f env.yaml
+mamba activate {{ cookiecutter.conda_env_name }}
 pre-commit install
 ```
 

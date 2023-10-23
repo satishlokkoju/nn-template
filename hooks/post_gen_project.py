@@ -99,7 +99,7 @@ SETUP_COMMANDS: List[Query] = [
         interactive=True,
         default=True,
         prompt="Creating conda environment...",
-        command="conda env create -f env.yaml",
+        command="mamba env create -f env.yaml",
         autorun=True,
     ),
     Query(
@@ -107,7 +107,7 @@ SETUP_COMMANDS: List[Query] = [
         interactive=True,
         default=True,
         prompt="Installing pre-commits...",
-        command="conda run -n {{ cookiecutter.conda_env_name }} pre-commit install",
+        command="mamba run -n {{ cookiecutter.conda_env_name }} pre-commit install",
         autorun=True,
         dependencies=[
             Dependency(id="git_init", expected=True),
@@ -119,8 +119,8 @@ SETUP_COMMANDS: List[Query] = [
         interactive=True,
         default=True,
         prompt="Initializing gh-pages branch for GitHub Pages...",
-        command="conda run -n {{ cookiecutter.conda_env_name }} mike deploy --update-aliases 0.0 latest\n"
-        "conda run -n {{ cookiecutter.conda_env_name }} mike set-default latest",
+        command="mamba run -n {{ cookiecutter.conda_env_name }} mike deploy --update-aliases 0.0 latest\n"
+        "mamba run -n {{ cookiecutter.conda_env_name }} mike set-default latest",
         autorun=True,
         dependencies=[
             Dependency(id="conda_env", expected=True),
@@ -145,7 +145,7 @@ SETUP_COMMANDS: List[Query] = [
         default=True,
         prompt="Activate your conda environment with:",
         command="cd {{ cookiecutter.repository_name }}\n"
-        "conda activate {{ cookiecutter.conda_env_name }}\n"
+        "mamba activate {{ cookiecutter.conda_env_name }}\n"
         "pytest -v",
         autorun=False,
         dependencies=[
