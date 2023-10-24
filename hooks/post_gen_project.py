@@ -98,7 +98,7 @@ SETUP_COMMANDS: List[Query] = [
         id="conda_env",
         interactive=True,
         default=True,
-        prompt="Creating conda environment...",
+        prompt="Creating conda environment using mamba ...",
         command="mamba env create -f env.yaml",
         autorun=True,
     ),
